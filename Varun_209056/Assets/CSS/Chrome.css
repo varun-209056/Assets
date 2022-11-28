@@ -1,0 +1,15 @@
+#chrome
+{
+    height: 200px;
+    width: 200px;
+    background-color: cyan;
+    border: 100px inset yellow;
+    border-radius: 100%;
+    border-left-color: rgb(12, 212, 12);
+    border-right-color:  yellow;
+    border-top-color:red;    
+}
+body
+{
+    background-color: black;
+}
