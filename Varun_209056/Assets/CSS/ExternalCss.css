@@ -1,100 +1,106 @@
-#div1
-{
+nav{
+    background-color: black;
+    color: white;
     display: flex;
-    background-color: rgb(155, 96, 53);
-    color: aliceblue;
-    word-spacing: 20px;    
+    height: 80px;
+    padding: 3px;
+}
+body{
+    margin: 0px;
+}
+#img1{
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+}
+#element1{
+    width: 10%;
+    background-color: antiquewhite;
+    text-align: center;
+    transition: 2s all;
     
 }
-#div2
-{
-    word-spacing: 20px;
-    margin-top: 25px;
-    width: 25%;
-    padding-left: 15px;
+#element1:hover{
+    background-color: purple;
+    flex: 20%;
 }
-#div3
-{
-    margin-top: 15px;
+li{
+    display: inline;
+    margin-left: 55px;
+}
+ul{
+    list-style-type: none;
+}
+#element2{
+    width: 65%;
     text-align: right;
-    width: 80%;
-    padding: 9px;
+    padding: 30px;
+    flex: 80%;
+}
+a{
+    color: aliceblue;
+    font-size: 20px;
+    padding: 20px;
     text-decoration: none;
-    font-size: 18px;
-    color: white;
+    font-weight: bold;
+    transition: 1s all;
 }
 
-#nav
+
+.dropdown-menu
 {
-    display: flex;
-    width: 100%;
-    background-color: purple;
-    height: 40px;
+    display: inline;
+    background-color: white;
+    color: black;
+}
+a:hover{
+    color: red;
+    text-shadow: 2px 2px grey;
+}
+.dropdown-content a
+{
+    color:rgb(255, 248, 248);
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: left;
+    display: inline;
     
 }
-#logo
-{
-    width: 16%;
-    text-align: center;
-    color: white;
-    background-color: rgb(170, 23, 170);
-    padding: 10px;
-    font-size: 20px;
-    font-weight: bolder;
+.dropdown-content a:hover .dropdown-menu{
+    display: block;
+    
 }
-#div4
-{
-    word-spacing: 25px;
-    text-align: right;
-    width: 82%;
-    margin-top: 15px;
-}
-a
-{
-    color: aliceblue;
-    text-decoration: none;
-    font-family: arial;
-    padding: 15px;
-}
-a:hover
-{
-    background-color: yellow;
-    color: red;
+#head{
+    background-color: blueviolet;
+    height: 20px;
     transition: 2s all;
 }
-#slider
-{
+
+#head:hover{
+    background-color: cornflowerblue;
+}
+#slider{
+    height: 600px;
     width: 100%;
-    height: 500px;
-    border: 2px inset black;
-    background-image: url(../Images/19333449.jpg);
+    background-image: url(../images/cleaning-service-flat-vector-8360874.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
-    animation-name: gallery;
-    animation-duration: 5s;
-    animation-delay: 2s;
+    background-size: cover;
+    animation-name: firstone;
+    animation-duration: 3s;
+    animation-delay: 5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-@keyframes gallery
-{
-    0%
-    {
-        background-image: url(../Images/19333449.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    50%
-    {
-        background-image: url(../Images/fictional-planet-with-colourful-night-sky-stars-nebula.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    100%
-    {
-        background-image: url(../Images/space1.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
 
+@keyframes firstone{
+    from{
+        background-image: url(../images/cleaning-service-flat-vector-8360874.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    to{
+        background-image: url(../images/cleaning-service-sign-vector-8539835.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 }
