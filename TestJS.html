@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Js </title>
+    <script>
+        //  Printing * Pattern 
+        for(i=0;i<6;i++)
+        {
+            for(j=0;j<=i;j++){
+                document.write("* ");
+            }
+            document.write("</br>");
+        }
+        // Table of Students
+        document.write("<table border=3 width=70%>");
+        document.write("<thead bgcolor=lightgreen>");
+        document.write("<tr align=center>");
+        document.write("<tr>");
+        document.write("<td> Name </td>");
+        document.write("<td> Class </td>");
+        document.write("<td> Section </td>");
+        document.write("<td> Eng </td>");
+        document.write("<td> Hindi </td>");
+        document.write("<td> Maths </td>");
+        document.write("</thead> ");
+        for(a=1;a<5;a++){
+        document.write("<tr bgcolor=skyblue>");
+            for(i=0;i<6;i++){
+                if(i==0){
+                var n=prompt("Enter the Name:")
+            }
+            if (i==1)
+            {
+                var n=prompt("Enter the Class:")
+            }
+            if (i==2)
+            {
+                var n=prompt("Enter the Section:")
+            }
+            if (i==3)
+            {
+                var n = prompt("Eng:")
+            }
+            if (i==4)
+            {
+                var n = prompt("Hindi:")
+            }
+            if (i==5)
+            {
+                var n = prompt("Math:")
+            }
+            document.write("<td>"+n);
+            document.write("</td>");
+            }
+        document.write("</tr>");
+        }
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
