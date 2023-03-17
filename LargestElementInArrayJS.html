@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        const arr = [2, 10, 999, 11, 999, 1000, 95, 76, 88, 96, 1000];
+
+        var third = -2;
+        var second = -1;
+        var largest = 0;
+        for(var i = 1; i <= arr.length; i++){
+            if(arr[largest] < arr[i]){
+                third = second;
+                second = largest;
+                largest = i;
+            } 
+            else if(arr[largest] != arr[i]){
+                if(second == -1 || arr[second] < arr[i]){
+                    third = second;
+                    second = i;
+                } else if(third == -2 || arr[i] > arr[third]){
+                    third = i;
+                }
+            }
+        }
+        document.write(arr + "</br>");
+        document.write("Largest element in an array is " + arr[largest] + "</br>");
+        document.write("Second largest element in an array is " + arr[second] + "</br>");
+        document.write("Third largest element in an array is " + arr[third] + "</br>");
+
+    </script>
+    
+</body>
+</html>
