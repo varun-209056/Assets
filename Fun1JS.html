@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Function</title>
+    <script>
+        function fun1(a,b){
+            const sum=a+b;
+            return sum;
+        }
+    
+        document.write(fun1(5,6,4,4,6));
+        document.write("</br>");
+
+        function fun2(...args){
+            let sum = 0;
+            for(var i=0;i<args.length;i++){
+                sum = sum+args[i];
+            }
+            return sum;
+        }
+
+        document.write(fun2(1,2,3,4,5));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
