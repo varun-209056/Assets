@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    
+</head>
+<body>
+    <!-- 1.How to access an HTML element using JavaScript -->
+    <!-- <h1>Hello World!!</h1>
+    <p id="p1">First Paragraph</p>
+    <script>
+        let p = document.getElementById("p1").value;
+        
+    </script> -->
+   
+    <!--2.How to change the content of a HTML element using JavaScript. -->
+    <!-- <h1>Hello World!!</h1>
+    <p id="p1">First Paragraph</p>
+    <script>
+        let p = document.getElementById("p1").value;
+        document.getElementById("p1").innerHTML = "New Text: " + p;
+    </script> -->
+   
+    <!-- 3.How to change the style of a HTML element using JavaScript. -->
+    <!-- <h1>Hello World!!</h1>
+    <p id="p1">First Paragraph</p>
+    <button id="b1">Click Me</button>
+    <script>
+        b1.addEventListener("mousedown",function(){
+            b1.style.background = "red";
+        }) -->
+    <!-- </script> -->
+    
+    <!-- 4.How to add an event listener to a HTML element using JavaScript. -->
+    <!-- <h1>Hello World!!</h1>
+    <p id="p1">New Paragraph</p>
+    <button id="b1"> change color </button>
+    <script>
+        b1.addEventListener("mousedown",function(){
+            p1.style.color = "red";
+        })
+    </script> -->
+
+  
+
+    <!-- 8.Getting the value of an input element using JavaScript. -->
+    <!-- <h1>Hello World!!</h1>
+    <p id="p1">First Paragraph</p>
+    <p id="p2"></p>
+    <input type="text" placeholder="name" id="inp" onchange="updateinput()">
+    <button>Submit</button>
+    <script>
+        function updateinput(){
+            let a = document.getElementById("inp").value;
+        document.getElementById("p2").innerHTML ="New Text: " + a;
+
+        }        
+    </script> -->
+    
+    <!-- 10.Changing the source attribute of an image element using JavaScript
+    <img id="p" src="https://img.freepik.com/free-photo/psychedelic-paper-shapes-with-copy-space_23-2149378246.jpg?w=900&t=st=1680092030~exp=1680092630~hmac=97d3135b878e4aa9746d1ed8ff007e4ca46a2b673ed2abec4e5a146c11f54a05" alt="No path found">
+    <button id="button">Button</button>
+    <script>
+        let p = document.getElementById('p');
+        let button = document.getElementById('button');
+
+        button.addEventListener("click",function(){
+            p.src = "https://img.freepik.com/free-photo/lone-tree_181624-46361.jpg?w=740&t=st=1680092194~exp=1680092794~hmac=31d317683f3c270e5b15000ae96253bbd9cb6ece318b7c72be567e2902452484";   
+            
+        })
+    </script> -->
+
+     <!-- 5.Creating a new HTML element using JavaScript.  -->
+     <h1>New World!!</h1>
+     <div id="div1">
+     <p id="p1"> Content 1 </p>
+     <p id="p2">New Content</p>
+    </div>
+     <script>
+        let c = document.createElement("p");
+        let d = document.createTextNode("This is the content.");
+        c.appendChild(d);
+        
+        let a = document.getElementById("div1");
+        a.appendChild(c)
+     </script>
+
+   
+</body>
+</html>
