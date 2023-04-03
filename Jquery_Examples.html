@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JQuery Examples </title>
+    <script src="http://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                $("#p2").append(" New Line Added.").css("color","green");
+                $("#b1").css("background-color","red");
+            })
+            $("#p2").html("Second Paragraph.");
+            $("#b2").click(function(){
+                let v1 = $("<h1></h1>").text("New Division.");
+                $("#p3").append(v1);
+            })
+        })
+        
+    </script>
+</head>
+<body>
+    <h1>JQuery Practice</h1>
+    <div id="div1">
+        <p id="p1">First Paragraph</p>
+        <p id="p2"></p>
+        <button id="b1">Submit</button>
+    </div>
+    <div id="div2">
+        <p id="p3"></p>
+        <button id="b2">Add Content</button>
+    </div>
+</body>
+</html>
