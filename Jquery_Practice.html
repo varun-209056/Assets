@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Practice</title>
+    <script src="http://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                $("#p1").fadeToggle("slow");
+            })
+            $("#b1").click(function(){
+            $("#p2").hide();
+            })
+            $("#b2").click(function(){
+            $("#p2").show();
+            })
+            // $("#b3").click(function(){
+            // $("#p3").slideToggle();    
+            // })
+            $("#b3").click(function(){
+                $("#p3").animate({
+                    left:"100px",
+                    right:"1500px",
+                    
+                });
+            })
+        })                
+                
+                
+    </script>
+     <style>
+        #p3{
+            height: 100px;
+            width: 200px;
+            position: absolute;
+            background-color:green;
+            border-radius: 25%;
+            text-align:center;       
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>JQuery Practice</h1>
+    <div id="div1">
+    <p id="p1">Lorem ipum dolor sit amet consectetur adipisicing elit. Harum quidem exercitationem nostrum asperiores consequuntur sapiente saepe, dolorem nisi tempore ducimus pariatur eos quam necessitatibus maxime, illo illum molestiae eveniet nesciunt!</p>
+        <p id="p2">Second Paragraph</p>
+        <button id="b1">Submit</button>
+        <button id="b2">New Feature</button>
+
+    </div>
+    <br>
+    <br>
+    <div id="div2">
+       <br>
+        <p id="p3" >Third Paragraph</p>
+        <button id="b3">Click Me</button>
+        
+    </div>
+</body>
+</html>
